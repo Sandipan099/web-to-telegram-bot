@@ -14,8 +14,8 @@ import urllib.parse
 
 # Send a message via a telegram bot
 def telegram_bot_sendtext(bot_message):
-    bot_token = os.getenv('BOT_TOKEN')
-    bot_chatID = os.getenv('CHAT_ID')
+    bot_token = "5606844989:AAGHtEXDLOWIZ-DTsGec2qSBu2f04q2BqJs"
+    bot_chatID = "-1001580304747"
     message = bot_message
     params = {'text': message}
     send_text = 'https://api.telegram.org/bot' + bot_token + '/sendMessage?chat_id=' + bot_chatID + '&parse_mode=Markdown&' + urllib.parse.urlencode(params)
